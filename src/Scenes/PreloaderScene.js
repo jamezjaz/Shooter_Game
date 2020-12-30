@@ -85,6 +85,20 @@ export default class PreloaderScene extends Phaser.Scene {
     this.load.audio('bgMusic', ['./src/assets/conflict_theme.mp3']);
 
     this.load.image('titleBg', './src/assets/title_bg.png');
+
+    this.load.spritesheet('playerShip', './src/assets/jet.png', {
+      frameWidth: 16,
+      frameHeight: 24,
+    });
+    this.load.spritesheet('monster', './src/assets/monster.png', {
+      frameWidth: 72,
+      frameHeight: 64,
+    });
+    this.load.spritesheet('enemyShip', './src/assets/enemyShip.png', {
+      frameWidth: 32,
+      frameHeight: 16,
+    });
+    this.load.image('monsterLaser', './src/assets/monsterLaser.png');
   }
 
   init () {
